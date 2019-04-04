@@ -2,7 +2,7 @@
 //  Settings.swift
 //  Assignment2
 //
-//  Created by Ivan on 2019-04-04.
+//  Created by Ivan and Raheem on 2019-04-04.
 //  Copyright © 2019 CentennialCollege. All rights reserved.
 //
 
