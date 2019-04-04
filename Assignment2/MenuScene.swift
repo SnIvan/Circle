@@ -18,8 +18,8 @@ class MenuScene: SKScene {
     }
     
     func addLogo() {
-        let logo = SKSpriteNode(imageNamed: "logo")
-        logo.size = CGSize(width: frame.size.width/4, height: frame.size.width/4)
+        let logo = SKSpriteNode(imageNamed: "logo-2")
+        logo.size = CGSize(width: frame.size.width/2, height: frame.size.width/2)
         logo.position = CGPoint(x: frame.midX, y: frame.midY + frame.size.height/4)
         addChild(logo)
     }
@@ -31,7 +31,7 @@ class MenuScene: SKScene {
         playLabel.position = CGPoint(x: frame.midX, y: frame.midY)
         addChild(playLabel)
         
-        let highscoreLabel = SKLabelNode(text: "Highscore:")
+        let highscoreLabel = SKLabelNode(text: "Highscore: " + "\(UserDefaults.standard.integer(forKey: "Highscore"))")
         highscoreLabel.fontName = "AvenirNext-Bold"
         highscoreLabel.fontSize = 40.0
         highscoreLabel.fontColor = UIColor.white
